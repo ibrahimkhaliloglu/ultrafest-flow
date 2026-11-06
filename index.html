@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ultrasound-to-speech samples</title>
+<meta name="robots" content="noindex">
+<style>
+:root { --ink:#1f1f1f; --muted:#555; --panel:#f2f2f2; --teal:#2d6e7d; --tab:#383838; color-scheme:light; }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink); font:16px/1.45 "Ubuntu Mono",ui-monospace,Menlo,Consolas,monospace; }
+main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+h1 { font:700 1.5rem/1.2 Montserrat,system-ui,sans-serif; margin:0 0 8px; }
+.by { margin:0 0 4px; font-weight:700; }
+.at, .note { margin:0; color:var(--muted); }
+.note { margin-top:12px; }
+.tabs { display:flex; gap:8px; margin:24px 0 0; }
+.tabs button { flex:1; font:inherit; font-weight:700; padding:10px 8px; min-height:44px; border:0; border-radius:12px 12px 0 0;
+  background:var(--panel); color:var(--ink); cursor:pointer; }
+.tabs button[aria-selected="true"] { background:var(--tab); color:#fff; }
+section { background:var(--panel); border-radius:0 0 20px 20px; padding:12px; }
+.tabs + section, main > section:first-of-type { margin-top:0; }
+main > .note + section { margin-top:24px; border-radius:20px; }
+article { background:#fff; border-radius:20px; padding:16px; }
+article + article { margin-top:12px; }
+.said { margin:0 0 12px; font-weight:700; color:var(--teal); }
+.row { padding:6px 0; }
+.row span { display:block; font-size:.9rem; color:var(--muted); margin-bottom:2px; }
+audio { width:100%; height:40px; display:block; }
+footer { margin-top:24px; color:var(--muted); }
+footer a { color:var(--teal); }
+footer h2 { font:700 1rem/1.2 Montserrat,system-ui,sans-serif; color:var(--ink); margin:0 0 8px; }
+footer ul { margin:0; padding:0; list-style:none; }
+footer li { padding:4px 0; overflow-wrap:anywhere; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Enhancing ultrasound-to-acoustic mapping using optical flow</h1>
+  <p class="by">Ibrahim Ibrahimov, Csaba Zainkó, Gábor Gosztolya</p>
+  <p class="at">Ultrafest XII · Paris</p>
+  <p class="note">Speech synthesised from tongue ultrasound alone, on test sentences the models never saw. HiFi-GAN vocoder.</p>
+  
+  <section id="01fi"><article><p class="said">“when sunlight strikes raindrops in the air they act like a prism and form a rainbow”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/004_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/004_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/004_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/004_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/004_xaud_farn.mp3"></audio></div></article><article><p class="said">“the rainbow is a division of white light into many beautiful colours”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/005_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/005_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/005_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/005_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/005_xaud_farn.mp3"></audio></div></article><article><p class="said">“these take the shape of a long round arch with its path high above and its two ends apparently beyond the horizon”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/006_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/006_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/006_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/006_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/006_xaud_farn.mp3"></audio></div></article><article><p class="said">“there is according to legend a boiling pot of gold at one end”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/007_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/007_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/007_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/007_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/007_xaud_farn.mp3"></audio></div></article><article><p class="said">“people look but no one ever finds it”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/008_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/008_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/008_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/008_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/008_xaud_farn.mp3"></audio></div></article><article><p class="said">“when a man looks for something beyond his reach his friends say he is looking for the pot of gold at the end of the rainbow”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/009_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/009_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/009_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/009_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/009_xaud_farn.mp3"></audio></div></article><article><p class="said">“throughout the centuries men have explained the rainbow in various ways”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/010_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/010_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/010_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/010_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/010_xaud_farn.mp3"></audio></div></article><article><p class="said">“some have accepted it as a miracle without physical explanation”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/011_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/011_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/011_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/011_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/011_xaud_farn.mp3"></audio></div></article><article><p class="said">“to the hebrews it was a token that there would be no more universal floods”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/012_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/012_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/012_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/012_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/012_xaud_farn.mp3"></audio></div></article><article><p class="said">“the greeks used to imagine that it was a sign from the gods to foretell war or heavy rain”</p><div class="row"><span>Recorded speech</span><audio controls preload="none" src="audio/01fi/013_xaud_ref.mp3"></audio></div><div class="row"><span>Vocoder on recorded mel</span><audio controls preload="none" src="audio/01fi/013_xaud_copy.mp3"></audio></div><div class="row"><span>Frames-only 3D-CNN</span><audio controls preload="none" src="audio/01fi/013_xaud_base.mp3"></audio></div><div class="row"><span>MARS · satkit</span><audio controls preload="none" src="audio/01fi/013_xaud_sat.mp3"></audio></div><div class="row"><span>MARS · Farnebäck</span><audio controls preload="none" src="audio/01fi/013_xaud_farn.mp3"></audio></div></article></section>
+  <footer><h2>Contact</h2><ul><li>Ibrahim Ibrahimov: <a href="mailto:ibrahim@tmit.bme.hu">ibrahim@tmit.bme.hu</a></li><li>Csaba Zainkó: <a href="mailto:zainko@tmit.bme.hu">zainko@tmit.bme.hu</a></li><li>Gábor Gosztolya: <a href="mailto:ggabor@inf.u-szeged.hu">ggabor@inf.u-szeged.hu</a></li></ul></footer>
+</main>
+<script>
+document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
+  document.querySelectorAll('main > section').forEach(s => { s.hidden = s.id !== b.dataset.s; });
+}));
+document.addEventListener('play', e => document.querySelectorAll('audio').forEach(a => { if (a !== e.target) a.pause(); }), true);
+</script>
+</body>
+</html>
